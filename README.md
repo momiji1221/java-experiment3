@@ -22,12 +22,42 @@
 
 ## 核心方法
 '''
-  
+  public class Doctor implements Student,Teacher{
+	String Name;
+	String Sex;
+	String Age;
+	float Salaly;
+	float Pay;
+	public Doctor(String Name,String Sex,String Age)
+	{
+		this.Name = Name;
+		this.Sex = Sex;
+		this.Age = Age;
+	}
+	public String toString() {
+		return "姓名: "+this.Name+"  性别: "+this.Sex+"  年龄: "+this.Age;
+	}
+	public void setPay(float Pay){
+		this.Pay = Pay;
+		System.out.println("应缴学费："+this.Pay);
+	}
+	public void getPay(float Pay){
+		this.Pay = Pay;
+		System.out.println("待缴学费："+this.Pay);
+	}
+	public void setSalaly(float Salaly){
+		this.Salaly = Salaly;
+		System.out.println("应发工资："+this.Salaly);
+	}
+	public void getSalaly(float Salaly){
+		this.Salaly = Salaly;
+		System.out.println("待发工资："+this.Salaly);
+	}
 '''
 
 ## 实验结果
-因电脑问题结果未保存，故障处理后将马上完善本项
+
 
 ## 实验感想
-首先要反思一下，并没有真正理解继承的用法，没有体现super方法，在之后的时间我会继续按要求完成这个实验，经过这次实验，我对信息的输出这方面有更深的理解，我将会进一步完善实验内容。
+经过这次实验，我了解了接口的使用方法以及异常处理的方法
 
